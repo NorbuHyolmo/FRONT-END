@@ -1,0 +1,209 @@
+.content-container{
+    display: flex;
+    justify-content: center;
+    height: 3000px;
+    overflow-y: scroll;
+}
+
+.middle-section{
+    flex:1;
+    position: relative;
+    left: 16px;
+    display: flex;
+    justify-content: center;
+    width: 696px;
+    padding: 0px 32px;
+    height: 100vh;
+}
+
+.status-section{
+    padding: 0px 2px;
+    background-color:rgb(42, 43, 48);
+    border-radius: 8px;
+    width: 696px;
+    position: absolute;
+    top: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.status-container{
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+    margin-top: 2px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.66);
+    width: 96%;
+}
+
+.profile-picture-status{
+    height: 38px;
+    width: 38px;
+    border-radius: 18px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.caption-section{
+    background-color: rgb(53, 56, 59);
+    margin-left: 10px;
+    flex:1;
+    padding: 12px 12px;
+    padding-top: 16px;
+    border: none;
+    border-radius: 24px;
+}
+
+
+.caption-section::placeholder{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
+    line-height: 1.5;
+    font-size: 18px;
+    color: #b6b9bb;
+    font-weight: 400;
+}
+
+.media-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 96%;
+    padding: 0px;
+}
+
+.live-video-container,
+.photo-container,
+.feeling-activity-container{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px;;
+    padding: 2px 24px;
+}
+
+.live-video-container:hover,
+.photo-container:hover,
+.feeling-activity-container:hover{
+    background-color: rgba(138, 138, 138, 0.2);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.media-title{
+    color: #cbced1;
+    font-weight: 600;
+    margin: 10px 6px;
+}
+
+.media-logo{
+    height: 28px;
+    width: 28px;
+}
+
+
+
+/* Story Section */
+
+.story-section{
+    position: relative;
+    top: 148px;
+    height: 250px;
+    width: 696px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+.story-section::-webkit-scrollbar {
+    width: 2px;
+    height: 8px;
+    opacity: 0;
+    transition: opacity 0.3 ease;
+}
+
+.story-section::-webkit-scrollbar-thumb {
+    background-color: rgba(163, 163, 163, 0.5);
+    border-radius: 24px;
+}
+
+.story-post{
+    position: relative;
+    margin-right: 8px;
+    height: 200px;
+    width: 112px;
+    border-radius: 8px;
+    background-color: rgb(53, 56, 59);
+    overflow: hidden;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.my-image{
+    height: 150px;
+    width: 115px;
+    object-position: top;
+    object-fit: cover;
+}
+
+.story-image{
+    height: 200px;
+    width: 115px;
+    border-radius: 8px;
+    object-position: center;
+    object-fit: cover;
+}
+
+.clear-overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.add-story{
+    position: absolute;
+    bottom: 30px;
+    left: 38px;
+    height: 34px;
+    width: 34px;
+    border-radius: 20px;
+    border: 4px solid rgb(53, 56, 59);
+}
+
+.create-story{
+    color: rgb(241, 241, 241);
+    font-size: 12px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 0px;
+    left: 25px;
+}
+
+.story-profile-picture{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 34px;
+    width: 34px;
+    border-radius: 100%;
+    border: 3px solid rgb(17, 136, 255);
+    object-position: center;
+    object-fit: contain;
+}
+
+.friend-name{
+    color: rgb(241, 241, 241);
+    font-size: 12px;
+    font-weight: 600;
+    width: 80px;
+    position: absolute;
+    bottom: -2px;
+    left: 10px;
+}

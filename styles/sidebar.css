@@ -1,0 +1,320 @@
+.left-sidebar {
+    background-color: #1f1f21;
+    position: fixed;
+    top: 58.21px;
+    left: 0px;
+    width: 350px;
+    height: 100vh;
+    z-index: 50;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
+
+.left-sidebar::-webkit-scrollbar {
+    width: 8px;
+    opacity: 0;
+    transition: opacity 0.3 ease;
+}
+
+.left-sidebar::-webkit-scrollbar-thumb {
+    background-color: rgba(163, 163, 163, 0.5);
+    border-radius: 24px;
+}
+
+.left-sidebar:hover {
+    overflow-y: scroll;
+    opacity: 1;
+}
+
+.default-shortcuts-container {
+    position: relative;
+    top: 10px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 2px -2px 2px 8px;
+    margin-top: 8px;
+    border-bottom: 1px solid gray;
+}
+
+
+.profile-container,
+.friends-container,
+.memories-container,
+.saved-container,
+.groups-container,
+.video-container,
+.marketplace-container,
+.feeds-container,
+.see-more {
+    display: flex;
+    align-items: center;
+    color: #cbced1;
+    line-height: 20px;
+    transition: background-color 0.15s;
+    padding: 0px 16px 0px 10px;
+}
+
+.see-more {
+    margin-bottom: 6px;
+}
+
+.profile-container:hover,
+.friends-container:hover,
+.memories-container:hover,
+.saved-container:hover,
+.groups-container:hover,
+.video-container:hover,
+.marketplace-container:hover,
+.feeds-container:hover,
+.see-more:hover {
+    background-color: rgba(138, 138, 138, 0.2);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.profile {
+    height: 36px;
+    width: 36px;
+    border-radius: 18px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.sidebar-logo {
+    height: 32px;
+    width: 32px;
+    margin-left: 2px;
+
+}
+
+.see-more .sidebar-logo {
+    border-radius: 120%;
+    object-fit: fill;
+    border: none;
+}
+
+.sidebar-title {
+    margin-left: 16px;
+    font-size: 16px;
+    font-weight: 640;
+}
+
+
+.your-shortcuts-container {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 2px -2px 2px 8px;
+    margin-top: 8px;
+}
+
+.shortcuts-header {
+    font-size: 18px;
+    font-weight: 620;
+    margin-left: 8px;
+    margin-bottom: 12px;
+    color: #cbced1;
+}
+
+.shortcut-apps {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+}
+
+.mlbb-container,
+.ball-container,
+.candy-crush-container,
+.criminal-case-container,
+.farm-ville-container,
+.see-more-container {
+    position: relative;
+    top: -20px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    color: #cbced1;
+    line-height: 20px;
+    transition: background-color 0.15s;
+    padding: 0px 16px 0px 10px;
+}
+
+.mlbb-container:hover,
+.ball-container:hover,
+.candy-crush-container:hover,
+.criminal-case-container:hover,
+.farm-ville-container:hover,
+.see-more-container:hover{
+    background-color: rgba(138, 138, 138, 0.2);
+    border-radius: 8px;
+}
+
+
+.see-more-container {
+    margin-bottom: 10px;
+}
+
+.see-more-container .sidebar-logo {
+    border-radius: 24px;
+}
+
+.shorcuts-image {
+    height: 36px;
+    width: 36px;
+    border-radius: 6px;
+}
+
+.sidebar-footer {
+    font-size: 12px;
+    color: #cbced1;
+}
+
+.sidebar-footer a {
+    text-decoration: none;
+    color: #cbced1;
+    transition: text-decoration 0.15s;
+}
+
+.sidebar-footer a:hover {
+    text-decoration: underline;
+}
+
+.right-sidebar {
+    background-color: #1f1f21;
+    position: fixed;
+    padding: 4px;
+    top: 58.21px;
+    right: 0px;
+    width: 360px;
+    height: 100vh;
+    display: flex;
+    z-index: 50;
+    flex-direction: column;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.right-sidebar::-webkit-scrollbar {
+    width: 8px;
+    opacity: 0;
+    transition: opacity 0.3 ease;
+}
+
+.right-sidebar::-webkit-scrollbar-thumb {
+    background-color: rgba(163, 163, 163, 0.8);
+    border-radius: 24px;
+}
+
+.right-sidebar:hover {
+    overflow-y: scroll;
+    opacity: 1;
+}
+
+.birthday-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 10px;
+    height: 112px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid gray;
+    justify-content: space-between;
+}
+
+.birthday-container .birthday-header {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 620;
+    margin-bottom: 6px;
+    color: #cbced1;
+}
+
+.birthday-notification {
+    display: flex;
+    align-items: center;
+    margin-left: -6px;
+    padding: 4px;
+    display: flex;
+    white-space: nowrap;
+}
+
+.birthday-notification:hover {
+    background-color: rgba(138, 138, 138, 0.2);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.birthday-notification .gift-box {
+    width: 32px;
+    height: 32px;
+}
+
+.notifier {
+    margin-left: 12px;
+    font-size: 16px;
+    font-weight: 380;
+    color: rgb(241, 238, 238);
+}
+
+.notifier span {
+    font-weight: 620;
+}
+
+
+.contacts-container {
+    position: relative;
+    margin-top: -10px;
+    top: 5px;
+    left: 8px;
+}
+
+.contacts-header {
+    display: flex;
+    align-items: center;
+}
+
+.contact-title {
+    font-size: 18px;
+    font-weight: 620;
+    color: #cbced1;
+    width: 250px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons .search-button,
+.option-button {
+    height: 18px;
+    width: 18px;
+    flex: 1;
+    margin-left: 14px;
+}
+
+.chat-container {
+    position: relative;
+    top: 0px;
+    left: -6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.chat-container .profile-container {
+    display: flex;
+    align-items: center;
+    color: #cbced1;
+    line-height: 20px;
+    transition: background-color 0.15s;
+    padding: 0px 16px 0px 16px;
+}
+
