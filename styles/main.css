@@ -1,19 +1,18 @@
 .content-container{
     display: flex;
     justify-content: center;
-    height: 3000px;
     overflow-y: scroll;
 }
 
 .middle-section{
-    flex:1;
     position: relative;
     left: 16px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     width: 696px;
     padding: 0px 32px;
-    height: 100vh;
+    margin-bottom: 2000px;
 }
 
 .status-section{
@@ -55,7 +54,6 @@
     border: none;
     border-radius: 24px;
 }
-
 
 .caption-section::placeholder{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
@@ -104,9 +102,7 @@
 }
 
 
-
 /* Story Section */
-
 .story-section{
     position: relative;
     top: 148px;
@@ -168,13 +164,23 @@
 }
 
 .add-story{
-    position: absolute;
-    bottom: 30px;
-    left: 38px;
-    height: 34px;
-    width: 34px;
+    background-color: white;
+    position: relative;
+    bottom: 22px;
+    left: 41px;
+    height: 28px;
+    width: 28px;
     border-radius: 20px;
-    border: 4px solid rgb(53, 56, 59);
+    border: 6px solid  rgb(53, 56, 59);
+}
+
+.plus-image{
+    position: absolute;
+    bottom: -4px;
+    left: -4.5px;
+    height: 38px;
+    width: 38px;
+    border-radius: 20px;
 }
 
 .create-story{
@@ -206,4 +212,224 @@
     position: absolute;
     bottom: -2px;
     left: 10px;
+}
+
+.posts-section{
+    position: relative;
+    top: 168px;
+    width: 696px;
+    z-index: 10;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.post-container{
+    color: rgb(176, 179, 184);
+    background-color:rgb(42, 43, 48);
+    height: 888px;
+    width: 696px;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+
+.friend-info-container{
+    height: 48px;
+    display: flex;
+    align-items: center;
+    padding-top: 12px;
+    padding-left: 12px;
+
+}
+
+.friend-profile-picture{
+    height: 35px;
+    width: 35px;
+    border-radius: 20px;
+    border: 3px solid rgb(17, 136, 255);
+    
+}
+
+.post-details{
+    flex: 1;
+    margin-left: 12px;
+}
+
+.post-friend-name,
+.post-date-time{
+    margin: 6px 0px;
+}
+
+.post-friend{
+    font-size: 14px;
+    margin: 0px;
+}
+
+.post-friend-name{
+    color: rgb(245, 245, 245);
+    font-weight: 550;
+}
+
+.post-friend-name:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.join-follow{
+    color: rgb(91, 173, 255);
+    transition: text-decoration 0.15s;
+}
+
+.join-follow:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.post-date-time{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.post-date-time:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.post-option-button,
+.post-close-button{
+    height: 20px; 
+    width: 20px;
+    margin-right: 12px;
+}
+
+.post-option-button:hover,
+.post-close-button:hover{
+    cursor: pointer;
+}
+
+
+.caption-container{
+    color: rgb(212, 214, 219);
+    padding: 4px 12px 16px;
+}
+
+.caption{
+    margin: 0px;
+    font-size: 14px;
+    font-weight: 550;;
+}
+
+.image-container{
+    max-width: 696px;
+    max-height: 700px;
+    overflow: hidden;
+}
+
+.post-image{
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.reaction-container{
+    height: 82px; 
+    width: 696px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.post-reaction-count{
+    display: flex;
+    justify-content: space-between;
+    margin: 4px 12px;
+    align-items: center;
+    border-bottom: 1px solid gray;
+}
+
+.post-reaction-count p{
+    margin: 8px;
+    margin-top: 6px;
+}
+.reaction-count-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.laugh-reaction{
+    height: 23px;
+    width: 23px;
+}
+
+.reaction-count{
+    margin-left: 3px;
+    font-size: 16px;
+    font-weight: 450;
+}
+
+.reaction-count:hover{
+    text-decoration:underline;
+    cursor: pointer;
+}
+
+.comment-share-count{
+    display: flex;
+    align-items: center;
+}
+
+.comment-count,
+.share-count{
+    font-size: 16px;
+    font-weight: 450;
+}
+
+.comment-count:hover,
+.share-count:hover{
+    text-decoration:underline;
+    cursor: pointer;
+}
+
+.comment-count{
+    margin-right: 12px;
+}
+
+.post-reaction-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 12px;
+}
+
+.button-image{
+    height: 26px;
+    width: 26px;
+}
+
+.button-title{
+    margin-left: 6px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.like-container,
+.comment-container,
+.share-container{
+    flex: 1;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.like-container:hover,
+.comment-container:hover,
+.share-container:hover{
+    background-color: rgba(138, 138, 138, 0.2);
+    border-radius: 8px;
+    cursor: pointer;
 }
